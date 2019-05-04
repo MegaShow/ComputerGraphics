@@ -4,17 +4,21 @@
 
 ## Report
 
-- [Homework 1 Learning about CG](Docs/Homework 1)
+[Homework 1 Learning about CG](Docs/Homework%201)
 
-- [Homework 2 Gui and Draw simple graphics](Docs/Homework 2)
+[Homework 2 Gui and Draw simple graphics](Docs/Homework%202)
 
-- [Homework 3 Draw line](Docs/Homework 3)
+[Homework 3 Draw line](Docs/Homework%203)
 
-- [Homework 4 Transformation](Docs/Homework 4)
+[Homework 4 Transformation](Docs/Homework%204)
 
-- [Homework 5 Camera](Docs/Homework 5)
+[Homework 5 Camera](Docs/Homework%205)
 
-- [Homework 6 Light and Shading](Docs/Homework 6)
+[Homework 6 Light and Shading](Docs/Homework%206)
+
+相关博客：
+
+[Game | 使用Vcpkg来构建OpenGL项目](https://icytown.com/game/vcpkg-build-opengl/)
 
 ## Required
 
