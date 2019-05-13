@@ -83,6 +83,7 @@
     <ClInclude Include="Include\PointDrawCircle.h" />
     <ClInclude Include="Include\PointDrawTriangle.h" />
     <ClInclude Include="Include\Shader.h" />
+    <ClInclude Include="Include\ShadowApplication.h" />
     <ClInclude Include="Include\TransformApplication.h" />
     <ClInclude Include="Include\TriangleApplication.h" />
   </ItemGroup>
@@ -95,8 +96,23 @@
     <ClCompile Include="Src\PointDrawCircle.cpp" />
     <ClCompile Include="Src\PointDrawTriangle.cpp" />
     <ClCompile Include="Src\Shader.cpp" />
+    <ClCompile Include="Src\ShadowApplication.cpp" />
     <ClCompile Include="Src\TransformApplication.cpp" />
     <ClCompile Include="Src\TriangleApplication.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader\Empty.fs.glsl" />
+    <None Include="Shader\Light.fs.glsl" />
+    <None Include="Shader\Shadow.fs.glsl" />
+    <None Include="Shader\Shadow.vs.glsl" />
+    <None Include="Shader\Vec2PosWithUniColor.vs.glsl" />
+    <None Include="Shader\Vec3Color.fs.glsl" />
+    <None Include="Shader\Vec3ColorWithLight.fs.glsl" />
+    <None Include="Shader\Vec3PosVec3Color.vs.glsl" />
+    <None Include="Shader\Vec3PosVec3ColorWithUniProj.vs.glsl" />
+    <None Include="Shader\Vec3PosVec3NormWithUniProj.vs.glsl" />
+    <None Include="Shader\Vec3PosWithLight.vs.glsl" />
+    <None Include="Shader\Vec3PosWithUniColor.vs.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

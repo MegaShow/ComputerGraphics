@@ -13,12 +13,14 @@
 #include "TransformApplication.h"
 #include "CameraApplication.h"
 #include "LightApplication.h"
+#include "ShadowApplication.h"
 
 TriangleApplication* triangleApp = nullptr;
 PointDrawApplication* pointDrawApp = nullptr;
 TransformApplication* transformApp = nullptr;
 CameraApplication* cameraApp = nullptr;
 LightApplication* lightApp = nullptr;
+ShadowApplication* shadowApp = nullptr;
 
 Application* app = nullptr;
 
@@ -92,6 +94,10 @@ int main() {
         if (ImGui::RadioButton("Hw6 Light and Shading", &appType, 4)) {
             if (!lightApp) lightApp = new LightApplication();
             app = lightApp;
+        }
+        if (ImGui::RadioButton("Hw7 Shadowing Mapping", &appType, 5)) {
+            if (!shadowApp) shadowApp = new ShadowApplication();
+            app = shadowApp;
         }
         ImGui::End();
 

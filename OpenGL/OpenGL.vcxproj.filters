@@ -45,6 +45,9 @@
     <ClInclude Include="Include\TriangleApplication.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Include\ShadowApplication.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Camera.cpp">
@@ -77,5 +80,46 @@
     <ClCompile Include="Src\TriangleApplication.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Src\ShadowApplication.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader\Light.fs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shader\Vec2PosWithUniColor.vs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shader\Vec3Color.fs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shader\Vec3ColorWithLight.fs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shader\Vec3PosVec3Color.vs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shader\Vec3PosVec3ColorWithUniProj.vs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shader\Vec3PosVec3NormWithUniProj.vs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shader\Vec3PosWithLight.vs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shader\Vec3PosWithUniColor.vs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shader\Empty.fs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shader\Shadow.vs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shader\Shadow.fs.glsl">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

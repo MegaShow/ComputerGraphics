@@ -16,6 +16,8 @@
 
 [Homework 6 Light and Shading](Docs/Homework%206)
 
+[Homework 7 Shadowing Mapping](Docs/Homework%207)
+
 相关博客：
 
 [Game | 使用Vcpkg来构建OpenGL项目](https://icytown.com/game/vcpkg-build-opengl/)
