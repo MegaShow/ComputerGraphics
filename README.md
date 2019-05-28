@@ -18,6 +18,8 @@
 
 [Homework 7 Shadowing Mapping](Docs/Homework%207)
 
+[Homework 8 Bezier Curve](Docs/Homework%208)
+
 相关博客：
 
 [Game | 使用Vcpkg来构建OpenGL项目](https://icytown.com/game/vcpkg-build-opengl/)

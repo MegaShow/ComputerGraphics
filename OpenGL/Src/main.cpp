@@ -14,6 +14,7 @@
 #include "CameraApplication.h"
 #include "LightApplication.h"
 #include "ShadowApplication.h"
+#include "CurveApplication.h"
 
 TriangleApplication* triangleApp = nullptr;
 PointDrawApplication* pointDrawApp = nullptr;
@@ -21,6 +22,7 @@ TransformApplication* transformApp = nullptr;
 CameraApplication* cameraApp = nullptr;
 LightApplication* lightApp = nullptr;
 ShadowApplication* shadowApp = nullptr;
+CurveApplication* curveApp = nullptr;
 
 Application* app = nullptr;
 
@@ -29,6 +31,7 @@ float cursorPosLastX;
 float cursorPosLastY;
 
 void mouseCallback(GLFWwindow* window, double xpos, double ypos);
+void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods);
 void scrollCallback(GLFWwindow* window, double xOffset, double yOffset);
 
 int main() {
@@ -49,6 +52,7 @@ int main() {
     int appType;
 
     glfwSetCursorPosCallback(window, mouseCallback);
+    glfwSetMouseButtonCallback(window, mouseButtonCallback);
     glfwSetScrollCallback(window, scrollCallback);
 
     if (!gladLoadGL()) {
@@ -99,6 +103,10 @@ int main() {
             if (!shadowApp) shadowApp = new ShadowApplication();
             app = shadowApp;
         }
+        if (ImGui::RadioButton("Hw8 Bezier Curve", &appType, 6)) {
+            if (!curveApp) curveApp = new CurveApplication();
+            app = curveApp;
+        }
         ImGui::End();
 
         if (app) {
@@ -119,6 +127,11 @@ int main() {
 
     delete triangleApp;
     delete pointDrawApp;
+    delete transformApp;
+    delete cameraApp;
+    delete lightApp;
+    delete shadowApp;
+    delete curveApp;
 
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
@@ -130,6 +143,7 @@ int main() {
 
 void mouseCallback(GLFWwindow* window, double xpos, double ypos) {
     if (app) {
+        app->inputMouse(window, (float) xpos, (float) ypos);
         if (cursorPosInit) {
             cursorPosLastX = xpos;
             cursorPosLastY = ypos;
@@ -138,6 +152,12 @@ void mouseCallback(GLFWwindow* window, double xpos, double ypos) {
         app->input(window, xpos - cursorPosLastX, cursorPosLastY - ypos);
         cursorPosLastX = xpos;
         cursorPosLastY = ypos;
+    }
+}
+
+void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods) {
+    if (app) {
+        app->inputMouse(window, button, action, mods);
     }
 }
 

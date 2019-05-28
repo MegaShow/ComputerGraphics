@@ -78,6 +78,7 @@
     <ClInclude Include="Include\Application.h" />
     <ClInclude Include="Include\Camera.h" />
     <ClInclude Include="Include\CameraApplication.h" />
+    <ClInclude Include="Include\CurveApplication.h" />
     <ClInclude Include="Include\LightApplication.h" />
     <ClInclude Include="Include\PointDrawApplication.h" />
     <ClInclude Include="Include\PointDrawCircle.h" />
@@ -90,6 +91,7 @@
   <ItemGroup>
     <ClCompile Include="Src\Camera.cpp" />
     <ClCompile Include="Src\CameraApplication.cpp" />
+    <ClCompile Include="Src\CurveApplication.cpp" />
     <ClCompile Include="Src\LightApplication.cpp" />
     <ClCompile Include="Src\main.cpp" />
     <ClCompile Include="Src\PointDrawApplication.cpp" />

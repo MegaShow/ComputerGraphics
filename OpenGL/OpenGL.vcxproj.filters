@@ -48,6 +48,9 @@
     <ClInclude Include="Include\ShadowApplication.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Include\CurveApplication.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Camera.cpp">
@@ -81,6 +84,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Src\ShadowApplication.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CurveApplication.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
